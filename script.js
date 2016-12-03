@@ -38,7 +38,7 @@ function jeu(nb){
   var i=1
   /*console.log(nb)*/
   ch=prompt("chiffre")
-  alert(nb)
+/*  alert(nb)*/
   if (ch=="kc"){alert(nb);ch=prompt("chiffre") }
   while(nb!=ch){
     i++
