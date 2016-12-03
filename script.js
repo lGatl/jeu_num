@@ -2,14 +2,29 @@ var nbj,j1,j2,nb;
 
 nbj=parseInt(prompt("1 ou 2 joueurs?"))
 
-if(nbj==1){
+
+
+function jeu1(){
 
   nb=Math.round(Math.random()*100)
-
   jeu(nb)
+  nouv=(prompt("nouvelle partie? O/N"))
+  if(nouv=="O"){
+    jeu1()
+  }
+
+}
+if(nbj==1){
+  nb=Math.round(Math.random()*100)
+  jeu(nb)
+  nouv=(prompt("nouvelle partie? O/N"))
+  if(nouv=="O"){
+    nb=Math.round(Math.random()*100)
+    jeu(nb)
+  }
 
 }else{
-    j1=(prompt("prenom du premier joueur"))
+  j1=(prompt("prenom du premier joueur"))
   j2=(prompt("prenom du second joueur"))
  jeua2(j1,j2)
 }
